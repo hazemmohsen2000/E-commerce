@@ -19,7 +19,6 @@
     align-items: center;
     list-style: none;
     gap : 50px;
-    color : #626262;
     font-size: 20px;
     font-weight: 500;
 }
@@ -72,4 +71,8 @@
     font-size : 14px ; 
     background : red ;
     color : white ;
+}
+.nav-menu li a {
+     text-decoration: none;
+    color : #626262;
 }
