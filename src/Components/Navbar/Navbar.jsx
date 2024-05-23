@@ -21,7 +21,6 @@ function Navbar() {
             <img src={logo} alt="Website logo" />
             <p>SHOPPER</p>
         </div>
-        <img className='nav-dropdown' src={nav_dropdown} onClick={dropdown_toggle} alt="arrow drop down menu" />
         <ul ref={menuRef} className="nav-menu">
             <li onClick={()=>{setMenu("shop")}}><Link to="/">Shop</Link> {menu === "shop" ? <hr/> : <></>}</li>
             <li onClick={()=>{setMenu("mens")}}><Link to="/mens">Men</Link> {menu === "mens" ? <hr/> : <></>}</li>
@@ -32,7 +31,10 @@ function Navbar() {
             <Link to = "/login"><button>Login</button></Link>
             <Link to = "/cart"><img src={cart_icon} alt="cart icon" /></Link>
             <div className="nav-cart-count">{getTotalCartItems()}</div>
-        </div>
+
+        </div>   
+         <img className='nav-dropdown' src={nav_dropdown} onClick={dropdown_toggle} alt="arrow drop down menu" />
+
     </div>
   )
 }
