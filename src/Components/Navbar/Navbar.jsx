@@ -4,16 +4,16 @@ import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
-import nav_dropdown from '../Assets/arrow-drop-down-circle.png'
+import { FaBars } from "react-icons/fa";
+
 function Navbar() {
 
     const [menu ,setMenu] = useState("shop")
     const {getTotalCartItems} = useContext(ShopContext);
     const menuRef = useRef();
 
-    const dropdown_toggle = (e) => { 
+    const dropdown_toggle = () => { 
         menuRef.current.classList.toggle('nav-menu-visible')
-        e.target.classList.toggle('open')
     }
   return (
     <div className='navbar'>
@@ -33,8 +33,7 @@ function Navbar() {
             <div className="nav-cart-count">{getTotalCartItems()}</div>
 
         </div>   
-         <img className='nav-dropdown' src={nav_dropdown} onClick={dropdown_toggle} alt="arrow drop down menu" />
-
+         <FaBars className='nav-dropdown'  onClick={dropdown_toggle}/>
     </div>
   )
 }

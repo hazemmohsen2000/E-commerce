@@ -141,8 +141,10 @@
     .nav-dropdown{
         display : block ; 
         width : 40px ;
-        rotate : -90deg;
+        font-size: 25px;
         transition: 0.5s;
+        cursor: pointer;
+        color : rgb(212, 62, 7)
     }
     .nav-menu  { 
         display: none;
@@ -158,9 +160,7 @@
         display : flex ;
         
     }
-    .nav-dropdown.open  { 
-        transform:rotate(90deg) ;
-    }
+  
 
 }
 @media(max-width : 500px){
