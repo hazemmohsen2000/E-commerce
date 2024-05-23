@@ -53,3 +53,7 @@ font-weight: 500;
     align-items: center;
     justify-content: center;
 }
+.hero-latest-btn a { 
+    text-decoration: none;
+    color : white ;
+}
