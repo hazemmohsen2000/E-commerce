@@ -30,6 +30,9 @@ Welcome to ShopEase, your go-to online store for buying clothes with ease! This 
 - Cart Page: See selected products with their quantity, price, total quantity, and total price.
 - Login/Signup Page: Manage your profile and orders by signing in or signing up.
 
+# live demo
+Check out the live demo [here](https://shoopeasee.netlify.app/).
+
 # ScreenShots
 ![Screenshot 1](/src/Components/Assets/screenshot1.png)
 ![Screenshot 2](/src/Components/Assets/screenshot2.png)
